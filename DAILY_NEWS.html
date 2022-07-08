@@ -1,0 +1,445 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <!--IMPORTANT! Use 'viewport' FOR VIEWING PAGE IN CORRECT SIZE ON PHONES!!!-->
+    <!--https://stackoverflow.com/questions/27855154/website-elements-and-font-are-too-small-in-mobiles-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="icon" href="images/favicon.ico">
+    
+    <style>
+        /*default font*/
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: x-large;
+        }
+
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .imgbox {
+            display: grid;
+            height: 100%;
+        }
+        .center-fit {
+            max-width: 100%;
+            max-height: 100vh;
+            margin: auto;
+        }
+        
+        
+        /* Drop down menu */        
+        .dropbtn {
+		background-color: #364146;
+		color: white;
+		padding: 8px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: x-large;
+		border: none;
+		cursor: pointer;
+		}
+		.dropdown {
+		  position: relative;
+		  display: inline-block;
+		  font-family: Arial, Helvetica, sans-serif;
+		  font-size: x-large;
+		}
+		.dropdown-content-menu {
+		  display: none;
+		  position: absolute;
+		  font-family: Arial, Helvetica, sans-serif;
+		  font-size: x-large;
+		  width: 878px;
+		  background-color: #364146;
+		  max-width: 878px;
+		  box-shadow: 0px 8px 22px 0px rgba(0,0,0,0.2);
+		  z-index: 1;
+		}
+		.dropdown-content-location {
+		  display: none;
+		  position: absolute;
+		  font-family: Arial, Helvetica, sans-serif;
+		  font-size: x-large;
+		  right: 0;
+		  background-color: #364146;
+		  max-width: 878px;
+		  box-shadow: 0px 8px 22px 0px rgba(0,0,0,0.2);
+		  z-index: 1;
+		}
+		.dropdown-content-menu a {
+		  color: white;
+		  padding: 8px 22px;
+		  text-decoration: none;
+		  display: block;
+		}
+		.dropdown-content-location a {
+		  color: white;
+		  padding: 8px 22px;
+		  text-decoration: none;
+		  display: block;
+		}
+
+		.dropdown-content-menu a:hover {background-color: black;}
+		.dropdown:hover .dropdown-content-menu {
+		  display: block;
+		}
+		.dropdown-content-location a:hover {background-color: black;}
+		.dropdown:hover .dropdown-content-location {
+		  display: block;
+		}
+		.dropdown:hover .dropbtn {
+		  background-color: #364146;
+		}
+		
+		
+    .auto-style1 {
+     	border-width: 0;
+		max-width: 878px;
+		background-color: #364146;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: x-large;
+	}		
+
+    .auto-style2 {
+     	max-width: 878px;
+    	color: black;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: x-large;
+	}	
+		
+    .auto-style3 {
+		color: blue;
+	}
+		
+    .auto-style5 {
+	text-align: center;
+}
+.auto-style6 {
+	border-width: 0px;
+}
+		
+    </style>
+</head>
+
+
+<body>
+<div class="imgbox">
+    <img class="center-fit" src='images/FrontPageImage.png'>
+</div>
+
+
+
+<table style="width: 100%" class="auto-style1" cellpadding="0" cellspacing="0">
+	<tr>
+		<td><div class="dropdown" style="float:left;">
+			  <button class="dropbtn">
+			  <img alt="" height="15" src="images/icon_menu.png" width="29" /> WoodbotLand</button>
+			  <div class="dropdown-content-menu">
+			  <a href="index.html">Home</a>
+			  <a href="shop.html">Shop</a>
+			  <a href="DAILY_NEWS.html">DAILY NEWS</a>
+			  <a href="woodbotnomics.html">Woodbotnomics</a>
+			  <a href="adress_contact.html">Adress & contact</a>
+			  </div>
+			</div>
+		</td>
+		
+		<td><div class="dropdown" style="float:right;">
+			  <button class="dropbtn">
+			  <img alt="" height="21" src="images/icon_location.png" width="24" /></button>
+			  <div class="dropdown-content-location">
+			  <a href="#">Sweden/Hogsta</a>
+			  <a href="#">Denmark</a>
+			  <a href="#">...</a>
+			  </div>
+			</div>
+		</td>
+	</tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+.news_text {
+  font:"Times New Roman";
+  color: #000000;
+  font-size: 24px;
+  padding: 8px 12px;
+  position: relative;
+  bottom: 8px;
+  max-width: 560px;
+  text-align: left;
+}
+
+
+
+* {box-sizing: border-box}
+body {font-family: Times New Roman, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 24px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 24px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+
+
+
+<img src="images/DAILY_NEWS_logo.png" style=" max-width: 100%;">
+<br>
+
+
+<div class="news_text">Get daily and latest local news update! 
+    An AI generated newspaper! Last 24hours have been calm, 
+    low activity and mild weather.
+</div>
+<br>
+
+
+
+<img src="images/LikeShareFollow.jpg">
+<br>
+
+
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="images/SkyCamShot1.jpg" style="width:100%">
+  <div class="text">Latest picture (2022-07-08, 10:20)</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="images/SkyCamShot2.jpg" style="width:100%">
+  <div class="text">Yesterday (2022-07-07, 10:20)</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images/SkyCamShot2.jpg" style="width:100%">
+  <div class="text">Day before yesterday (2022-07-06, 10:20)</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+<br>
+
+<div class="news_text"><b>DAILY NEWS:</b> No intruders detected last night. 
+    Woodbots status is ok. Full employment. Everyone is working. 
+    Battery levels are normal. One woodbot got stuck for 1 hour: 
+    (zoomed in picture on bot, red ring)
+</div>
+
+
+<br>
+
+<div class="news_text"><b>WEATHER:</b></div>
+
+
+<a class="weatherwidget-io" href="https://forecast7.com/en/59d5115d99/koping/" data-label_1="KÖPING" data-label_2="WEATHER" data-font="Times New Roman" data-days="5" data-theme="pure" >KÖPING WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+
+
+<br>
+<br>
+
+
+
+<div class="news_text"><b>BUSINESS NEWS:</b> 1kg potatoes sold last 24hours. 
+    Higher profit than normal predicted. 45days left of season for this year. 
+    <a href="www.google.se">Read more..</a>
+</div>
+
+
+<br>
+<br>
+
+<div class="news_text" style="width:800px; margin:0 auto;">
+    <a href="www.google.se">Sign up for newsletter</a>
+    <br>
+    <a href="www.google.se">Follow on facebook</a>
+</div>
+
+<br>
+
+
+
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/sv_SE/sdk.js#xfbml=1&version=v14.0&appId=304080599618197&autoLogAppEvents=1" nonce="Ad8B9di6"></script>
+
+
+<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<p>&nbsp;</p>
+
+</body>
+</html>
